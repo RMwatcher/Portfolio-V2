@@ -1,0 +1,206 @@
+/* CSS Variables */
+:root {
+    --background-color: #2d0062;
+    --text-color: #F8F8FF;
+    --secondary-color: #868139;
+    --link-color: #d8d5d9;
+    --link-visited-color: #F5E616;
+    --background-about: #6103ce;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3, p, li {
+    font-size: 1.3em;
+}
+
+p, li {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.3;
+}
+
+#icon {
+    width: 18%;
+    margin-top: 5px;
+}
+
+:is(.cert ul, .social ul, nav ul, .skills ul) {
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+}
+
+header {
+    position: relative;
+}
+
+#intro {
+    position: absolute;
+    margin: 0 auto 15% auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0 3%;
+    font-size: 1.5em;
+}
+
+main {
+    margin: 0 5%;
+}
+
+#profilo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--background-about);
+    padding: 20px;
+    max-width: 80%;
+    justify-items: center;
+    margin: 5% auto 0 auto;
+
+}
+
+#top {
+    grid-column-start: 2;
+}
+
+.skills {
+    grid-row-start: 2;
+}
+
+.projects section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects figure img {
+    width: 80%;
+}
+
+#microsoft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#microsoft img {
+    margin-bottom: 3%;
+}
+
+:is(.cert img) {
+    width: 50%;
+}
+
+footer {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 3%;
+}
+
+#logo {
+    width: 30%;
+    margin: 2% auto 0 auto;
+}
+
+footer p {
+    margin: auto;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--link-visited-color);
+    font-weight: bold;
+}
+
+/* Mobile Devices */
+@media (min-width: 319px) and (max-width: 700px) {
+    main {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .about img {
+        display: block;
+        margin: 5% auto 0 auto;
+    }
+
+    #intro {
+        font-size: 1em;
+    }
+
+    .about {
+        display: block;
+        background-color: var(--background-color);
+    }
+
+    .projects section {
+        display: block;
+    }
+
+    .projects ul {
+        text-align: left;
+        margin-bottom: 8%;
+    }
+
+    .cert {
+        display: block;
+    }
+
+    .cert ul, .skills ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects figure img {
+        width: 90%;
+    }
+
+    :is(.cert img) {
+        width: 60%;
+    }
+
+    .social ul {
+        gap: 7%;
+        margin-bottom: 10%;
+    }
+}
