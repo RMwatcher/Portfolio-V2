@@ -18,16 +18,27 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><img id="icon" src="./assets/image/Icon dark v2.png" alt="Richard Mora's icon"></li>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Experience</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="nav-menu" data-visible="false">
+                <li><img id="icon" src="./assets/image/Icon dark v2.png" alt="Richard Mora's icon"></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#cert">Certifications</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <button id="nav-button" aria-controls="primary-navigation" aria-expanded="false">
+                <svg class="hamburger" viewBox="0 0 100 100" width="60">
+                    <rect class="top line" width="80" height="10" x="10" y="25" rx="5">
+                    </rect>
+                    <rect class="middle line" width="80" height="10" x="10" y="45" rx="5">
+                    </rect>
+                    <rect class="bottom line" width="80" height="10" x="10" y="65" rx="5">
+                    </rect>
+                </svg>
+            </button>
+        </nav>
+    </header>
     <header id="profilo">
 
         <section id="intro">
@@ -38,7 +49,7 @@
 
     </header>
     <main>
-        <section class="about">
+        <section id="about">
             <img src="./assets/image/profile_1.png" alt="close up of Richard Mora">
             <article id="top">
                 <h2>About Me</h2>
@@ -78,7 +89,7 @@
             </section>
         </section>
 
-        <section class="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <section>
                 <figure>
@@ -192,7 +203,7 @@
                 </div>
             </section>
         </section>
-        <section class="cert">
+        <section id="cert">
             <h2>Certifications</h2>
             <p>The following are the lists of certifications I've obtained.</p>
             <p>All badges are issued by Microsoft and CompTIA and provided by <a
@@ -223,10 +234,10 @@
 
             </section>
         </section>
-        <section class="contact">
+        <section id="contact">
+            <h2>Contact Me</h2>
             <p>Have any questions or want to talk about video games and/or anime? You can reach me through my email or
                 from one of my social media pages below.</p>
-            <h2>Contact Me</h2>
             <h3>Email:</h3>
             <p><a href="mailto:richard.mora0511@gmail.com">richard.mora0511@gmail.com</p></a>
             <h3>Resume:</h3>
@@ -253,6 +264,7 @@
             </ul>
         </section>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
