@@ -7,6 +7,10 @@
     --secondary-color: #3b3bfa;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -166,7 +170,7 @@ a:focus {
     }
 
     .nav-menu {
-        position: absolute;
+        position: fixed;
         top: 64px;
         background-color: var(--secondary-color);
         width: 100%;
@@ -247,8 +251,12 @@ a:focus {
     }
 
     #intro {
-        font-size: 1em;
+        margin: 0 auto;
     }
+
+     #intro > h1, #intro > h2 {
+        font-size: 1.2em;
+     }
 
     #about {
         display: block;
@@ -286,3 +294,8 @@ a:focus {
         margin-bottom: 10%;
     }
 }
+
+/* @media only screen and (max-width: 500px) {
+    #intro {
+    }
+} */
