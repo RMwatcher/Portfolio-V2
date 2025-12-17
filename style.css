@@ -71,6 +71,11 @@ nav ul a {
 
 main {
     margin: 0 5%;
+
+    & h2 {
+        text-align: center;
+        margin-top: 5%;
+    }
 }
 
 #profilo {
@@ -81,62 +86,83 @@ main {
     width: 100vw;
 }
 
+/* uses CSS nesting */
 #about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     background-color: var(--secondary-color);
     padding: 20px;
-    max-width: 80%;
     justify-items: center;
     margin: 5% auto 0 auto;
+    column-gap: 5%;
 
-}
-
-#top {
+    & #top {
     grid-column-start: 2;
 }
-
-.skills {
-    grid-row-start: 2;
 }
 
+#about img {
+    margin: auto;
+}
+
+/* uses CSS nesting */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & article {
+        max-width: 450px;
+    }
+
+    & ul {
+        padding: 0;
+    }
+
+    & li {
+        padding-bottom: 1px;
+    }
+}
+
+/* uses CSS nesting */
 #projects section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    & figure img {
+        width: 80%;
+    }
 }
 
-#projects figure img {
-    width: 80%;
-}
-
+/* uses CSS nesting */
 #microsoft {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
 
-#microsoft img {
-    margin-bottom: 3%;
+    & img {
+        margin-bottom: 3%;
+    }
 }
 
 :is(#cert img) {
     width: 50%;
 }
 
+/* uses CSS nesting */
 footer {
     display: grid;
     background-color: var(--secondary-color);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding-bottom: 3%;
+
+    & p {
+        margin: auto;
+    }
 }
 
 #logo {
     width: 30%;
     margin: 2% auto 0 auto;
-}
-
-footer p {
-    margin: auto;
 }
 
 .social ul {
@@ -159,9 +185,9 @@ a:focus {
 }
 
 /* Mobile Devices */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1200px) {
     main {
-        padding: 0 5%;
+        margin: 0 15%;
         text-align: center;
     }
 
@@ -247,7 +273,7 @@ a:focus {
 
     #about img {
         display: block;
-        margin: 5% auto 0 auto;
+        margin: auto;
     }
 
     #intro {
@@ -261,6 +287,11 @@ a:focus {
     #about {
         display: block;
         background-color: var(--background-color);
+    }
+
+    .skills {
+        flex-direction: column;    
+        align-content: center;   
     }
 
     #projects section {
@@ -294,8 +325,4 @@ a:focus {
         margin-bottom: 10%;
     }
 }
-
-/* @media only screen and (max-width: 500px) {
-    #intro {
-    }
-} */
+ 
