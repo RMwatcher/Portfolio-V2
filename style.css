@@ -74,15 +74,6 @@ main {
         margin-top: 5%;
     }
 }
-
-#profilo {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
 /* uses CSS nesting */
 #about {
     display: flex;
@@ -105,18 +96,21 @@ main {
     align-items: center;
     margin-top: 50px;
     gap: 50px;
-    & a {
-        display: flex;
-        font-size: 1.1em;
-        text-decoration: none;
-        justify-content: center;
-        border: 1px solid var(--link-color);
-        background-color: var(--link-color);
-        color: var(--background-color);
-        padding: 20px;
-        border-radius: 10px;
-        width: 110px;
-    }
+}
+
+
+#contact a, #git a {
+    display: flex;
+    font-size: 1.1em;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid var(--link-color);
+    background-color: var(--link-color);
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 110px;
 }
 
 /* uses CSS nesting */
@@ -199,7 +193,6 @@ a:focus {
 
     .nav-menu {
         position: fixed;
-        top: 64px;
         background-color: var(--secondary-color);
         width: 100%;
         transform: translateX(100%);
@@ -219,6 +212,7 @@ a:focus {
     /* Cause navigation menu to appear and disappear when hamburger is clicked */
     .nav-menu[data-visible="true"] {
         transform: translateX(0%);
+        margin-top: 60px;
     }
 
     nav a:link,
@@ -269,12 +263,9 @@ a:focus {
     }
 
     #nav-button {
-        display: block;
-        margin-left: 70%;
-    }
-
-    #profile img {
-        background-image: url("./assets/image/james-harrison-vpOeXr5wmR4-unsplash\(sm\).jpg");
+        display: flex;
+        margin-left: auto;
+        padding-right: 5%;
     }
 
     #about img {
@@ -300,6 +291,11 @@ a:focus {
         align-content: center;   
     }
 
+    #git a {
+        display: block;
+        margin: 40px auto;
+    }
+
     #projects section {
         display: block;
     }
@@ -323,4 +319,9 @@ a:focus {
         margin-bottom: 10%;
     }
 }
- 
+
+@media only screen and (max-width: 800px) {
+    #contact {
+        flex-direction: column;
+    }
+}
