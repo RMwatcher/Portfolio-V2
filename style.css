@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-    --background-color: rgb(37, 36, 39);
-    --text-color: rgb(218, 223, 231);
+    --background-color: #262528;
+    --text-color: #dadfe7;
     --link-color: #F5E616;
 }
 
@@ -150,6 +150,12 @@ footer {
     flex-wrap: wrap;
     gap: 5%;
     padding: 0;
+}
+
+.social img {
+    background-color: var(--text-color);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 a:link,
