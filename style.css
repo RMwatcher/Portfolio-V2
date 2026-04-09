@@ -54,14 +54,28 @@ main {
     justify-items: center;
     margin: 0 auto;
     column-gap: 5%;
-
-    & article {
-        margin-top: 5%;
-    }
 }
 
 #about img {
     margin: 0 auto;
+}
+
+.social { 
+    margin-top: 2%;
+
+    & ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 0;
+    }
+}
+
+.social img {
+    background-color: var(--text-color);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #contact {
@@ -128,34 +142,18 @@ main {
 
 /* uses CSS nesting */
 footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: var(--secondary-color);
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-bottom: 3%;
 
     & p {
-        margin: auto;
+        margin: 3% auto;
     }
 }
 
 #logo {
     width: 30%;
     margin: 2% auto 0 auto;
-}
-
-.social ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
-    padding: 0;
-}
-
-.social img {
-    background-color: var(--text-color);
-    padding: 5px;
-    border-radius: 5px;
 }
 
 a:link,
@@ -185,9 +183,8 @@ a:focus {
         border: none;
     }
 
-    #about img {
-        display: block;
-        margin: auto;
+    #about .social li {
+        margin: 5%;
     }
 
     .intro {
@@ -224,8 +221,7 @@ a:focus {
     }
 
     .social ul {
-        gap: 7%;
-        margin-bottom: 10%;
+        gap: 15%;
     }
 }
 
