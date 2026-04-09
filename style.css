@@ -1,10 +1,8 @@
 /* CSS Variables */
 :root {
-    --background-color: #481f77;
-    --text-color: #F8F8FF;
-    --link-color: #fff4d4;
-    --link-visited-color: #F5E616;
-    --secondary-color: #3b3bfa;
+    --background-color: rgb(30, 27, 36);
+    --text-color: rgb(229, 231, 235);
+    --link-color: #F5E616;
 }
 
 * {
@@ -39,7 +37,6 @@ p, li {
 }
 
 nav {
-    background-color: var(--secondary-color);
     font-size: 1.2em;
 }
 
@@ -97,7 +94,6 @@ main {
     margin-top: 50px;
     gap: 50px;
 }
-
 
 #contact a, #git a {
     display: flex;
@@ -176,7 +172,6 @@ a:visited {
 
 a:hover,
 a:focus {
-    color: var(--link-visited-color);
     font-weight: bold;
 }
 
@@ -193,7 +188,6 @@ a:focus {
 
     .nav-menu {
         position: fixed;
-        background-color: var(--secondary-color);
         width: 100%;
         transform: translateX(100%);
         transition: transform .3s;
@@ -217,7 +211,6 @@ a:focus {
 
     nav a:link,
     nav a:visited {
-        color: var(--link-visited-color);
         scroll-snap-align: start none;
         scroll-margin-right: -20px;
 
