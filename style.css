@@ -25,8 +25,8 @@ p, li {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.3;
     font-size: 1.3em;
+    margin-bottom: 2%;
 }
-
 
 :is(.social ul, .skills ul) {
     list-style-type: none;
@@ -61,7 +61,7 @@ main {
 }
 
 #about img {
-    margin: auto;
+    margin: 0 auto;
 }
 
 #contact {
@@ -83,7 +83,7 @@ main {
     color: var(--background-color);
     padding: 20px;
     border-radius: 10px;
-    width: 110px;
+    width: 120px;
 }
 
 /* uses CSS nesting */
@@ -106,16 +106,25 @@ main {
     }
 }
 
+#git {
+    text-align: center;
+}
+
+#projects figure {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
 /* uses CSS nesting */
 #projects section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     & figure img {
-        width: 80%;
+        width: 100%;
     }
 }
-
 
 /* uses CSS nesting */
 footer {
@@ -192,14 +201,10 @@ a:focus {
         flex-direction: column;    
         align-content: center;   
     }
-
-    #git a {
-        display: block;
-        margin: 40px auto;
-    }
-
+    
     #projects section {
         display: block;
+        margin: 18% 0;
     }
 
     #projects ul {
