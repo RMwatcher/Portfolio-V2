@@ -13,7 +13,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h1, h2, h3 {
@@ -52,9 +52,12 @@ main {
     max-width: 800px;
     padding: 20px;
     justify-items: center;
-    margin: 5% auto 0 auto;
+    margin: 0 auto;
     column-gap: 5%;
 
+    & article {
+        margin-top: 5%;
+    }
 }
 
 #about img {
@@ -87,7 +90,8 @@ main {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 5%;
 
     & article {
         max-width: 450px;
@@ -214,7 +218,7 @@ a:focus {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     #contact {
         flex-direction: column;
     }
