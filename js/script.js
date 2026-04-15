@@ -12,3 +12,8 @@ icons.forEach((icon) => {
 
 });
 
+const copyrightYear = new Date();
+
+const year = document.querySelector("#year");
+
+year.textContent = copyrightYear.getFullYear();

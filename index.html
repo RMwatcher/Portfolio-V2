@@ -25,7 +25,7 @@
 
     <main>
         <section id="contact">
-            <a class="button" href="./about.html">About Me</a>
+            <a class="button" href="#about.html">About Me</a>
             <a class="button" href="#projects">Projects</a>
             <a class="button" href="https://github.com/RMwatcher">GitHub</a>
             <a class="button" href="mailto:richard.mora0511@gmail.com">Get In Touch</a>
@@ -34,7 +34,7 @@
 
         <h2>About Me</h2>
         <section id="about">
-            <img src="./assets/image/profile_1.png" alt="close up of Richard Mora">
+            <img src="./assets/image/profile_1.png" alt="close up of Richard Mora" id="github">
             <section class="social">
                 <ul>
                     <li><a href="https://www.facebook.com/richard.mora.5070" rel="noopener noreferrer"
@@ -115,7 +115,7 @@
         <section id="projects">
             <h2>Projects</h2>
 
-            <p id="git">To see my latest projects, please visit my <a href="https://github.com/RMwatcher">GitHub</a>
+            <p id="git">To see my latest projects, please visit my <a href="#github">GitHub</a>
                 page.
             </p>
 
@@ -125,8 +125,8 @@
                             alt="Kumoricon's main website"></a>
                 </figure>
                 <div class="project">
-                    <h3><a href="https://www.kumoricon.org/">Kumoricon</a></h3>
-                    <p>Website Developer, Summer 2025</p>
+                    <h3>Kumoricon</h3>
+                    <h3>Website Developer, Summer 2025</h3>
                     <ul>
                         <li>Edited colors of navigation links of the footer section using Tailwind.css</li>
                         <li>Contributed to the integration and testing of Telly forms to be used in the website.</li>
@@ -142,9 +142,9 @@
                             alt="Anime Randomizer's website"></a>
                 </figure>
                 <div class="project">
-                    <h3><a href="https://anime-randomizer.onrender.com/">Anime Randomizer</a></h3>
-                    <p>Website Developer, Winter 2026</p>
-                    <p><a href="https://github.com/RMwatcher/Anime-Randomizer">See Code on GitHub</a></p>
+                    <h3>Anime Randomizer</h3>
+                    <h3>Website Developer, Winter 2026</h3>
+                    <h4><a href="https://github.com/RMwatcher/Anime-Randomizer">See Code on GitHub</a></h4>
                     <ul>
                         <li>Generates an random anime title that unitize Node.js, Express, Axios, and a REST API.</li>
                         <li>Uses Jikan REST API, an unofficial free, open-source API for MyAnimeList.net to retrieve
@@ -162,9 +162,9 @@
                             alt="The Last Story's website"></a>
                 </figure>
                 <div class="project">
-                    <h3><a href="https://standard-blog.onrender.com/">The Last Story</a></h3>
-                    <p>Website Developer, Winter 2026</p>
-                    <p><a href="https://github.com/RMwatcher/blog">See Code on GitHub</a></p>
+                    <h3>The Last Story</h3>
+                    <h3>Website Developer, Winter 2026</h3>
+                    <h4><a href="https://github.com/RMwatcher/blog">See Code on GitHub</a></h4>
                     <ul>
                         <li>Generates a post on a standard blog website using Node.js, Express, Json, and Bootstrap for
                             styling.</li>
@@ -180,8 +180,8 @@
                             src="./assets/projects/dataentryportal.png" alt="Data Entry: Portal's website"></a>
                 </figure>
                 <div class="project">
-                    <h3><a href="https://dtc-wsuv.org/projects/data-entry-portal/">DATA ENTRY: PORTAL</a></h3>
-                    <p>Web/Game Developer & UX/UI Designer, Spring 2023</p>
+                    <h3>DATA ENTRY: PORTAL</h3>
+                    <h3>Web/Game Developer & UX/UI Designer, Spring 2023</h3>
                     <ul>
                         <li>The creation of a VR game based on the 1986 game Portal by Rob Swigart and published by
                             Activision along with a website showcasing it.</li>
@@ -197,7 +197,7 @@
     </main>
     <footer>
         <img id="logo" src="./assets/image/Icon primary dark.png" alt="Richard Mora's icon">
-        <p>Richard Mora &copy; 2026</p>
+        <p>Richard Mora &copy; <span id="year"></span></p>
 
     </footer>
     <script src="./js/script.js"></script>
